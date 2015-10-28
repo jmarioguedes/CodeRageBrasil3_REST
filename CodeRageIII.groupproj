@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F6A154B7-8B9D-4AAE-B00B-2D17368DCC9B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="REST\Spotify\cr3Spotify.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="cr3Spotify">
+        <MSBuild Projects="REST\Spotify\cr3Spotify.dproj"/>
+    </Target>
+    <Target Name="cr3Spotify:Clean">
+        <MSBuild Projects="REST\Spotify\cr3Spotify.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="cr3Spotify:Make">
+        <MSBuild Projects="REST\Spotify\cr3Spotify.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="cr3Spotify"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="cr3Spotify:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="cr3Spotify:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
