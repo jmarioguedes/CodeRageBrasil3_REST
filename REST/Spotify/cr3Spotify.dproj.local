@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2015/02/22 10:45:29.000.556,=C:\Users\Mario\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>2015/02/22 10:46:18.000.189,C:\Users\Mario\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\PROJETOS\CodeRageIII\REST\Spotify\Unt_Principal.pas</Transaction>
-    <Transaction>2015/02/22 10:46:18.000.189,C:\Users\Mario\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\PROJETOS\CodeRageIII\REST\Spotify\Unt_Principal.dfm</Transaction>
-    <Transaction>2015/02/22 10:46:28.000.148,C:\Users\Mario\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\PROJETOS\CodeRageIII\REST\Spotify\cr3Spotify.dproj</Transaction>
+    <Transaction>2015/02/22 10:46:18.000.189,C:\PROJETOS\CodeRageIII\REST\Spotify\Unt_Principal.dfm=C:\Users\Mario\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2015/02/22 10:46:18.000.189,C:\PROJETOS\CodeRageIII\REST\Spotify\Unt_Principal.pas=C:\Users\Mario\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/02/22 10:46:28.000.148,C:\PROJETOS\CodeRageIII\REST\Spotify\cr3Spotify.dproj=C:\Users\Mario\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>

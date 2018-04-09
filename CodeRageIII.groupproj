@@ -6,6 +6,9 @@
         <Projects Include="REST\Spotify\cr3Spotify.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="REST\API Pública\Project2.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -23,14 +26,23 @@
     <Target Name="cr3Spotify:Make">
         <MSBuild Projects="REST\Spotify\cr3Spotify.dproj" Targets="Make"/>
     </Target>
+    <Target Name="Project2">
+        <MSBuild Projects="REST\API Pública\Project2.dproj"/>
+    </Target>
+    <Target Name="Project2:Clean">
+        <MSBuild Projects="REST\API Pública\Project2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project2:Make">
+        <MSBuild Projects="REST\API Pública\Project2.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="cr3Spotify"/>
+        <CallTarget Targets="cr3Spotify;Project2"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="cr3Spotify:Clean"/>
+        <CallTarget Targets="cr3Spotify:Clean;Project2:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="cr3Spotify:Make"/>
+        <CallTarget Targets="cr3Spotify:Make;Project2:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
